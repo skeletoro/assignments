@@ -30,8 +30,7 @@ public class loops {
 		   	else {System.out.println(k);}
 			
 	
-		
-	
+			
 
 		
 		
