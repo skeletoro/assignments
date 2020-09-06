@@ -2,21 +2,21 @@
 public class assignment3 {
 
 	public static void main(String[] args) {
-		double[] ages = { 3, 9, 23, 64, 2, 8, 28, 93, 5808 };
-		double subtractionTool = (ages[ages.length - 1] - ages[0]);
-		double sumOfAges = 0;
+		int[] ages = { 3, 9, 23, 64, 2, 8, 28, 93, 29 };
+		int subtractionTool = (ages[ages.length - 1] - ages[0]);
+		int sumOfAges = 0;
 		// System.out.println(subtractionTool);
 		for (int i = 0; i < ages.length; i++) {
 			sumOfAges = sumOfAges + ages[i];
 		}
-		double averageAge = sumOfAges / ages.length;
+		int averageAge = sumOfAges / ages.length;
 		// System.out.println(averageAge);
 
 		String[] names = { "Sam", "Tommy", "Tim", "Sally", "Buck", "Bob" }; // question 2
 		int sumOfNames = 0;
 		for (int x = 0; x < names.length; x++) {
 			sumOfNames = sumOfNames + names[x].length();
-			// System.out.println(names[x] + " ");
+		// System.out.println(names[x] + " ");
 
 		}
 		int averageNameCharCount = sumOfNames / names.length;
@@ -27,7 +27,7 @@ public class assignment3 {
 			nameLengths[y] = names[y].length();
 		}
 		for (int z = 0; z < nameLengths.length; z++) {
-			// System.out.println(nameLengths[z]);
+			 //System.out.println(nameLengths[z]);
 		}
 		int elementSum = 0;
 		for (int elementInd : nameLengths) {
@@ -57,15 +57,13 @@ public class assignment3 {
 		double walletBal = 17.50;
 		boolean tempIsHot = true;
 		boolean buyDrink = willBuyDrink(tempIsHot, walletBal);
-		//System.out.println(buyDrink);
-		
+		// System.out.println(buyDrink);
+
 		double myAcctBal = 1251;
 		boolean tvIsBroke = true;
 		boolean buyNewTelevision = willBuyFlatscreen(tvIsBroke, myAcctBal);
-		System.out.println(buyNewTelevision);
+		//System.out.println(buyNewTelevision);
 	}
-	
-	  
 
 	public static void qSeven(String word, int n) {
 
@@ -95,7 +93,7 @@ public class assignment3 {
 
 	public static double qTen(double[] a) {
 		double arraySum = 0;
-		double arrayAve = 0;
+	
 		for (int i = 0; i < a.length; i++) {
 			arraySum += a[i];
 		}
@@ -130,15 +128,13 @@ public class assignment3 {
 
 		}
 	}
+
 	public static boolean willBuyFlatscreen(boolean myTvIsBroken, double checkingAcctBal) {
 		if ((myTvIsBroken = true) && (checkingAcctBal > 1000)) {
 			return true;
-		}else {
+		} else {
 			return false;
 		}
 	}
-	
-	
-	
-	
+
 }
