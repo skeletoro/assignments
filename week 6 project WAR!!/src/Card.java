@@ -1,7 +1,11 @@
 
-public class Card  {
+public class Card extends App  {
 private int value;
 private String name;
+public Card (int value, String name) {
+	this.value = value; 
+	this.name = name;
+}
 public int getValue() {
 	return value;
 }
@@ -14,8 +18,8 @@ public String getName() {
 public void setName(String name) {
 	this.name = name;
 }
-public void describeCard(Card card) {
-	System.out.println("card drawn is: " + card.getValue() + card.getName());
+public void describe() {
+	System.out.println("card drawn is: " + name + " " + "("  + value + ")");
 
 }
 	
